@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(41, 41, 41);
+    color: white; 
+    font-family: Helvetica, Arial, sans-serif;
+}
+body a {
+    color: rgb(255, 182, 154);
+    text-decoration: none;
+}
+
+.cardHeader {
+    position: fixed;
+    inset: 0;
+    width: 20vw;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+
+}
+.card {
+    background-color: rgb(30, 30, 30);
+    border-radius: 2rem;
+    position: fixed;
+    inset: 0;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    padding: 2rem;
+}
+.button {
+    border: none;
+    background-color: transparent;
+    height: 10vh;
+    width: 10vh;
+}
