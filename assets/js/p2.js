@@ -73,12 +73,12 @@ particlesJS('particles-js',
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
+            "enable": false,
             "mode": "repulse"
           },
           "onclick": {
             "enable": true,
-            "mode": "push"
+            "mode": "repulse"
           },
           "resize": true
         },
@@ -97,7 +97,7 @@ particlesJS('particles-js',
             "speed": 3
           },
           "repulse": {
-            "distance": 1
+            "distance": 100
           },
           "push": {
             "particles_nb": 4
