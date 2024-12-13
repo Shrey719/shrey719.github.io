@@ -1,21 +1,41 @@
-<html>
-<head>
+<html lang="en">
 
-<link href="/css/index.css" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shrey719</title>
+    <link href="/css/index.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="particles-js"></div>
     <script src="/js/particles.js"></script>
     <script src="/js/p2.js"></script>
     
-<div class="cardHeader">
-    <h1>Shrey</h1>
-</div>
-<div id="card" class="card">
-<button onclick="window.location.href='https://github.com/shrey719'" class="button">
-    <img src="/img/github.png" style="background-color: transparent; height: 5rem; width: 6rem; border-radius: 300rem;"></img>
-</button>
-<a href="https://github.com/shrey719"></a>
-</div>
+    <div class="cardHeader">
+        <h1>Shrey</h1>
+    </div>
+
+    <div id="card" class="card">
+    <button onclick="window.location.href='https://github.com/shrey719'" class="button">
+        <img src="/img/github.png" class="scimg" alt="github image">
+            <sub style="color: white;" id="s1">Github</sub>
+        </img>
+    </button>
+
+    <button onclick="window.location.href='https://discord.com/users/946877303714103377'" class="button">
+        <img src="/img/discord.png" class="scimg" alt="discord image">
+            <sub style="color: white;" id="s2">Discord</sub>
+        </img>
+    </button>
+    
+    </div>
+    <script>
+    let theonlytimeiactualycanreadaregex =  /android|iphone|kindle|ipad/i
+    isMobileDev = theonlytimeiactualycanreadaregex.test(navigator.userAgent)
+    if (isMobileDev) {
+        document.getElementById("s1").remove()
+        document.getElementById("s2").remove()
+    }
+    </script>
 </body>
 </html>

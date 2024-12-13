@@ -8,6 +8,13 @@ body a {
     text-decoration: none;
 }
 
+.scimg {
+    background-color: transparent; 
+    height: 5rem;
+    width: 5rem; 
+    border-radius: 300rem;
+    color: white;
+}
 .cardHeader {
     position: fixed;
     inset: 0;
@@ -22,8 +29,9 @@ body a {
     border-radius: 2rem;
     position: fixed;
     inset: 0;
-    width: 15rem;
-    height: 15rem;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
     margin: auto;
     padding: 2rem;
 }
@@ -32,4 +40,6 @@ body a {
     background-color: transparent;
     height: 10vh;
     width: 10vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 }
