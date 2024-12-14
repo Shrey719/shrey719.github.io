@@ -11,7 +11,6 @@ var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
 
-  /* particles.js variables with default values */
   this.pJS = {
     canvas: {
       el: canvas_el,
@@ -65,7 +64,7 @@ var pJS = function(tag_id, params){
         }
       },
       line_linked: {
-        enable: true,
+        enable: false,
         distance: 100,
         color: '#fff',
         opacity: 1,
@@ -75,12 +74,12 @@ var pJS = function(tag_id, params){
         enable: true,
         speed: 2,
         direction: 'none',
-        random: false,
+        random: true,
         straight: false,
         out_mode: 'out',
-        bounce: false,
+        bounce: true,
         attract: {
-          enable: false,
+          enable: true,
           rotateX: 3000,
           rotateY: 3000
         }
