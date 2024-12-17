@@ -38,4 +38,14 @@ body a {
     width: 10vh;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
+    margin-bottom: 2vh;
+}
+
+.fwdsub {
+     color: white;
+     font-family: helvetica, arial;
+     font-size: 2em;
+     margin: 1.5rem;
+     margin-bottom: 0.5rem; 
+     
 }
