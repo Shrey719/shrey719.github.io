@@ -1,0 +1,99 @@
+
+body {
+    background-color: rgb(41, 41, 41);
+    color: white; 
+    font-family: Helvetica, Arial, sans-serif;
+}
+body a {
+    color: rgb(255, 182, 154); /*Ya see, this is what we call being a retard - but im not changing it*/
+    text-decoration: none;
+}
+
+.scimg {
+    background-color: transparent; 
+    height: 10vh;
+    text-align: center;
+    width: 10vh; 
+    border-radius: 300rem;
+    color: white;
+}
+
+.headertext {
+    font-weight: 700;   
+    font-size: 1.5rem;
+}
+.card {
+    background-color: rgb(30, 30, 30);
+    border-radius: 2rem;
+    position: absolute;
+    inset: 0;
+    width: 20vw;    
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+}
+.button {
+    border: none;
+    background-color: transparent;
+    height: 10vh;
+    width: 10vh;
+    margin-left: 0.5vw;
+    text-align: center;
+    margin-right: 0.5vw;
+    margin-bottom: 2vh;
+}
+
+.fwdsub {
+     color: white;
+     font-family: helvetica, arial;
+     font-size: 0;
+     margin: 1.5rem;
+     text-align: center;
+     margin-bottom: 0.5rem; 
+     
+}
+
+.header {
+    width: 100vw;
+    z-index: 22;
+    font-weight: 700;   
+    font-size: 1.5rem;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(21, 21, 21)
+}
+
+.header a {
+    margin-right: 1vw;
+    margin-left: 1vw;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: rgba(255, 182, 154, 0.6)
+    
+}
+
+.blog {
+    width: 100vw;
+    height: 90vh;
+    left: 0; 
+    bottom: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.bloge a {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.bloge {
+    background-color: rgb(62, 62, 62);
+    padding: 2rem;
+    width: 80vw;
+    margin-top: 5vh;
+}
