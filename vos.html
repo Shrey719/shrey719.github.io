@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <noscript>Enable javascript you schizo</noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shrey719</title>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/loader.js"></script>
+    <style>
+        .my_insane_ramblings {
+            top: 0;
+            margin-top: 15vh;
+            position: absolute;
+            margin-left: 5vw;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header" id="header">
+        <a href="javascript:location.href='/'">Home</a> 
+        
+    </div>
+    <div id="particles-js"></div>
+    <script src="./js/particles.js"></script>
+    <script src="./js/p2.js"></script>
+
+    <div class="my_insane_ramblings">
+        <h1># So whats a bootloader</h1>
+        Because backwards compatibility, it is a right pain in the ass to get modern features working - so thats the first thing I did <br>
+        <br>
+        A bootloader sounds fancy, but in reality its any file that is 512 bytes long, runs in an infinite loop, and has the last two bytes as the magic number 0xaa55
+        <br>
+        A simple bootloader could be something like 
+        <br><br>
+        org 0x7c00<br>
+        <br>
+        bits 16
+        <br>
+        jmp $   
+        <br>
+        times 510-($-$$) db 0<br>              
+        dw 0xaa55<br>
+
+        <br>
+        Since it would be complicated to explain how the GDT and Long mode work, im not going to (am lazy) <br>
+        <br>
+        Basicaly, those two allow you to use stuff like 32 and 64 bits and a higher level langauge like C<br>
+        <h1> # Printing to the screen</h1>
+        Actualy putting text on the screen is actualy a LOT easier than it sounds
+        <br>
+        First, you would need a buffer to keep track of where to print to the screen <br> 
+        What I did was just make a varible called 'buf' and use this code to print a character to the screen
+        <p>
+            void print_char(char c) {<br>
+                <p class="ind">*(char*)(0xb8000+ 2)= c;></p> 
+                <p class="ind">buf_amnt = buf_amnt + decinc;</p>         
+            }<br>
+        </p>
+        The reason I write to the adress 0xb8000 is because it is where vram starts (vram is the stuff displayed on the screen)
+        <br>
+        
+        <h1># Keyboard input</h1>
+        <br>   
+        Doing keyboard input (atleast the easy way) is NOT fun 
+        <br>
+        First, make an enum of EVERY SINGLE CHARACTER that can be typed on your keyboard 
+        <br>
+        <br>
+        Then, make a function processing EVERY SINGLE CHARACTER that can be typed on your keyboard
+        <br>
+        This is what it would look like 
+        <br>
+        enum {<br>
+         <p class="ind">   //every damm character </p> 
+        }<br><br>
+        char namingthingsarehard() { <br>
+            <p class="ind"> // ever damm character </p>
+        } <br> <br>
+
+        char getchar() { <br><br>
+            <p class="ind">            return namingthingsarehard(some_function_to_read_from_port(0x60))
+            </p>
+        } <br>
+
+        <h1> # Anyway </h1><br>
+        If you want to learn osdev, I would suggest the osdev wiki <a href="https://wiki.osdev.org/">Here</a><br>
+        
+    </div>
+</body>
+</html>
