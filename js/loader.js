@@ -17,6 +17,8 @@ function loadBlog(blogFile) {
     return response.text(); 
   })
   .then(data => {
+    document.getElementById("blogSpace").innerText = data
+    document.getElementById("blog").visibility = "hidden"
     console.log('File contents:', data); 
   })
   .catch(error => {
